@@ -1,0 +1,61 @@
+body {
+    background: #483D8B	;
+}
+
+aside {
+    float: left;
+    background: #140814;
+    width 20%;
+    padding: 2.5%;
+    height: 215vh;
+    color: #fff;
+    border-right: 5px solid light;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul li {
+    color: #00FFFF;
+    text-decoration: none;
+    text-decoration: underline;
+    transition: all .5s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #8B0000;
+    text-decoration: none;
+    transform: scale(1.06);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    width: 75%;
+}
+
+.alert {
+    float: left;
+    margin-left: 120px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.flex {
+    float: left;
+    margin-left: 200px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.about{
+    margin-left: 50px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+

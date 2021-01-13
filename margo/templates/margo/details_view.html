@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    {{ article.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.story }}</p>
+        <p>{{ article.data }}</p>
+        <a href="{% url 'margo-delete' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'margo-update' article.id %}" class="btn btn-info">Редактировать</a>
+    </div>
+{% endblock %}

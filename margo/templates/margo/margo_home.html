@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Фильмы
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Фильмы с Марго Робби</h1>
+       {% for el in margo %}
+        <div class="alert alert-warning">
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.story }}</p>
+            <a href="{% url 'margo-detail' el.id %}" class="btn btn-warning">Редактировать</a>
+            <a href="{% url 'margo-review' el.id %}" class="btn btn-primary">Отзывы</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

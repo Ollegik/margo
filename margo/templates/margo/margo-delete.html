@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Удаление фильма
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Вы уверены?</h1>
+       <form method="post">
+           {% csrf_token %}<br>
+           <button class="btn btn-success" type="submit">Удалить фильм</button>
+       </form>
+    </div>
+{% endblock %}

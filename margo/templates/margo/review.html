@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Отзывы
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Отзывы</h1>
+    </div>
+{% for answer in answers %}
+    <div class="flex alert-primary w-50">
+        <p class="">{{ answer.text }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

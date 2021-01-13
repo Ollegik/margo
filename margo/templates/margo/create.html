@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Новый отзыв
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Добавление фильма</h1>
+       <form method="post">
+           {% csrf_token %}<br>
+           {{ form.title }}<br>
+           {{ form.story }}<br>
+           {{ form.data }}<br>
+           <span>{{ error }}</span>
+           <button class="btn btn-success" type="submit">Добавить фильм</button>
+       </form>
+    </div>
+{% endblock %}
